@@ -19,9 +19,9 @@ public class LogService {
 	public static void main(String[] args) throws Exception {
 		Container container = new Container();
 
-        JAXRSArchive deployment = ShrinkWrap.create(JAXRSArchive.class, "log-service.war");
-        deployment.addClass(LogService.class);
-        deployment.addAllDependencies();
-        container.start().deploy(deployment);
+        	JAXRSArchive deployment = ShrinkWrap.create(JAXRSArchive.class, "log-service.war");
+        	deployment.addClass(LogService.class);
+        	deployment.addAllDependencies();
+        	container.start().deploy(deployment);
 	}
 }
